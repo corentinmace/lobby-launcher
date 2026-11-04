@@ -3,6 +3,15 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
+    version: "0.6.2",
+    date: "2026-11-04",
+    title: "Polish",
+    changes: [
+      ["fixed", "Quick launch is opaque again: what's behind it no longer shows through, and its shadow no longer draws a dark box around it."],
+      ["improved", "The Store's free games strip scrolls with arrows on its sides instead of a scrollbar."],
+    ],
+  },
+  {
     version: "0.6.1",
     date: "2026-11-04",
     title: "Quick launch on your screen",
