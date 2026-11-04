@@ -1,0 +1,19 @@
+name: Idea or feature request
+description: A launcher to support, a feature you miss, something that could be simpler.
+labels: ["idea"]
+body:
+  - type: markdown
+    attributes:
+      value: Please look at the [existing ideas](../issues?q=label%3Aidea) first, and give a 👍 to the ones you'd like.
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What would you like Lobby to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What would it make easier for you?

@@ -1,0 +1,59 @@
+name: Bug report
+description: Something doesn't work as it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time! Please check the [known issues](../issues) first, someone may have reported it already.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+      placeholder: When I click Play on a Battle.net game, nothing happens. I expected the game to start.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Lobby
+        2. Select Diablo IV
+        3. Click Play
+  - type: input
+    id: version
+    attributes:
+      label: Lobby version
+      description: Settings → General, at the bottom.
+      placeholder: "0.3.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: windows
+    attributes:
+      label: Windows version
+      options:
+        - Windows 11
+        - Windows 10
+    validations:
+      required: true
+  - type: dropdown
+    id: launcher
+    attributes:
+      label: Launcher involved, if any
+      multiple: true
+      options:
+        - Steam
+        - Epic Games
+        - GOG
+        - Ubisoft Connect
+        - EA app
+        - Battle.net
+        - Riot
+        - A game added by hand
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Drag images here if something looks wrong.
