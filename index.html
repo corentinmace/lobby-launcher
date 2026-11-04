@@ -317,6 +317,10 @@
       .release li b.fixed { color: #fcd34d; background: rgba(251, 191, 36, 0.12); }
       .release.folded li:nth-child(n + 4) { display: none; }
       .more { margin-top: 12px; padding: 0; border: 0; background: none; color: var(--blue); font: 600 14px inherit; cursor: pointer; }
+      .release.older { display: none; }
+      .timeline-more { margin: 28px auto 0; max-width: 820px; padding-left: 52px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+      .timeline-more a { color: var(--muted); font-size: 14px; text-decoration: underline; text-underline-offset: 3px; }
+      .timeline-more a:hover { color: var(--text); }
 
       /* ---------- Bug reports ---------- */
       .support { margin-top: 56px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
@@ -535,6 +539,7 @@
           <p class="sub">Every release, newest first.</p>
         </div>
         <div class="timeline" id="timeline"></div>
+        <div class="timeline-more reveal" id="timeline-more"></div>
       </section>
 
       <section id="support">
@@ -620,12 +625,14 @@
         a.rel = "noopener";
       }
 
-      // Changelog timeline: the latest release open, older ones folded after three lines.
+      // Changelog timeline: the latest release open, the next ones folded after three lines, and
+      // only the last few versions until asked (the whole history is on GitHub too).
+      const SHOWN_VERSIONS = 3;
       const KIND = { new: "New", improved: "Improved", fixed: "Fixed" };
       const escape = (t) => t.replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]);
       const date = (d) => new Date(d + "T12:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
       document.getElementById("timeline").innerHTML = CHANGELOG.map(
-        (r, i) => `<article class="release reveal${i && r.changes.length > 3 ? " folded" : ""}">
+        (r, i) => `<article class="release reveal${i && r.changes.length > 3 ? " folded" : ""}${i >= SHOWN_VERSIONS ? " older" : ""}">
           <div class="box">
             <header><span class="v">${r.version}</span>${i ? "" : '<span class="latest">Latest</span>'}<span class="t">${escape(r.title)}</span><time datetime="${r.date}">${date(r.date)}</time></header>
             <ul>${r.changes.map(([k, t]) => `<li><b class="${k}">${KIND[k]}</b><span>${escape(t)}</span></li>`).join("")}</ul>
@@ -633,6 +640,14 @@
           </div>
         </article>`,
       ).join("");
+      const older = CHANGELOG.length - SHOWN_VERSIONS;
+      document.getElementById("timeline-more").innerHTML =
+        (older > 0 ? `<button class="btn ghost sm" type="button" id="show-older"><span>Show older versions (${older})</span></button>` : "") +
+        `<a data-releases href="${REPO}/releases" target="_blank" rel="noopener">All releases on GitHub</a>`;
+      document.getElementById("show-older")?.addEventListener("click", (e) => {
+        for (const r of document.querySelectorAll(".release.older")) r.classList.remove("older");
+        e.currentTarget.remove();
+      });
       for (const b of document.querySelectorAll(".release .more")) {
         b.onclick = () => {
           b.closest(".release").classList.remove("folded");

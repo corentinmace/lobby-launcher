@@ -4,7 +4,7 @@
 
 - **[Download the latest version](../../releases/latest)** (Windows 10 & 11, 64-bit)
 - **[Report a bug](../../issues/new?template=bug_report.yml)** or **[suggest an idea](../../issues/new?template=feature_request.yml)**
-- **[Website](https://corentinmace.github.io/lobby-launcher/)**: features, screenshots and the full changelog
+- **[Website](https://lobby-launcher.vercel.app/)**: features, screenshots and the full changelog
 
 This repository holds Lobby's website, releases and issue tracker. The app's source code is not public.
 

@@ -3,6 +3,26 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
+    version: "0.4.1",
+    date: "2026-11-04",
+    title: "Cleaner quick launch",
+    changes: [
+      ["fixed", "Quick launch no longer shows a scrollbar: your recent games fit in the panel, and longer lists still scroll with the wheel or the arrow keys."],
+    ],
+  },
+  {
+    version: "0.4.0",
+    date: "2026-11-04",
+    title: "Lobby updates itself",
+    changes: [
+      ["new", "Automatic updates: new versions install on their own, never during a game, and every installer is signed. Turn them off in Settings → Updates, and a badge at the top of the window tells you when a version is out."],
+      ["new", "An Updates section in Settings: installed version, check now, what's new."],
+      ["new", "A new installer in Lobby's colours, in English or French depending on Windows. It installs for your user only, without asking for administrator rights."],
+      ["new", "\"What's new\" and \"Report a bug\" links at the bottom of Settings."],
+      ["fixed", "With many results, the quick launch panel no longer gets cut at the bottom: the list scrolls and the shortcuts stay visible."],
+    ],
+  },
+  {
     version: "0.3.0",
     date: "2026-11-04",
     title: "Play time for every game",
