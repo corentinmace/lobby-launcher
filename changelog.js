@@ -3,6 +3,14 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
+    version: "0.4.2",
+    date: "2026-11-04",
+    title: "Smoother quick launch",
+    changes: [
+      ["fixed", "Quick launch results no longer leave an empty gap while you type: the list tightens up smoothly."],
+    ],
+  },
+  {
     version: "0.4.1",
     date: "2026-11-04",
     title: "Cleaner quick launch",
