@@ -3,6 +3,14 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
+    version: "0.6.1",
+    date: "2026-11-04",
+    title: "Quick launch on your screen",
+    changes: [
+      ["fixed", "With several screens, quick launch opens on the one your mouse is on, instead of where it was last shown."],
+    ],
+  },
+  {
     version: "0.6.0",
     date: "2026-11-04",
     title: "Welcome aboard",
