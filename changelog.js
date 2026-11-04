@@ -3,6 +3,16 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
+    version: "0.5.0",
+    date: "2026-11-04",
+    title: "HoYoPlay games",
+    changes: [
+      ["new", "HoYoPlay support: Genshin Impact, Honkai: Star Rail, Zenless Zone Zero and Honkai Impact 3rd show up in your library, start straight from Lobby, and can be uninstalled from the Storage view. A game HoYoPlay knows but whose files are gone is listed as not installed."],
+      ["new", "A search field at the top of the sidebar opens quick launch, for when the shortcut isn't at hand."],
+      ["fixed", "Games with a recent Steam store page (or one that was removed) get their cover from SteamGridDB instead of a blank tile."],
+    ],
+  },
+  {
     version: "0.4.2",
     date: "2026-11-04",
     title: "Smoother quick launch",

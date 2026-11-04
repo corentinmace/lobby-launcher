@@ -1,6 +1,6 @@
 # Lobby
 
-**All your games. One lobby.** Steam, Epic Games, GOG, Ubisoft Connect, EA app, Battle.net and Riot in one fast, beautiful library for Windows.
+**All your games. One lobby.** Steam, Epic Games, GOG, Ubisoft Connect, EA app, Battle.net, Riot and HoYoPlay in one fast, beautiful library for Windows.
 
 - **[Download the latest version](../../releases/latest)** (Windows 10 & 11, 64-bit)
 - **[Report a bug](../../issues/new?template=bug_report.yml)** or **[suggest an idea](../../issues/new?template=feature_request.yml)**

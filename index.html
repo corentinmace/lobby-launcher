@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Lobby · All your games, one launcher</title>
-    <meta name="description" content="Lobby brings Steam, Epic, GOG, Ubisoft, EA, Battle.net and Riot together in one library. Free, lightweight, for Windows." />
+    <meta name="description" content="Lobby brings Steam, Epic, GOG, Ubisoft, EA, Battle.net, Riot and HoYoPlay together in one library. Free, lightweight, for Windows." />
     <link rel="icon" href="assets/logo.png" />
     <script>
       // The public GitHub repository: releases (downloads), issues (bug reports) and this site.
@@ -393,7 +393,7 @@
     <header class="hero wrap">
       <span class="pill reveal"><b>New</b> Play time for every game, even when started elsewhere</span>
       <h1 data-words>All your games. <span class="gradient-text">One lobby.</span></h1>
-      <p class="lead reveal">Steam, Epic, GOG, Ubisoft, EA, Battle.net and Riot in one fast, beautiful library. Launch any game in two keystrokes, follow deals and your play time, and stop juggling seven launchers.</p>
+      <p class="lead reveal">Steam, Epic, GOG, Ubisoft, EA, Battle.net, Riot and HoYoPlay in one fast, beautiful library. Launch any game in two keystrokes, follow deals and your play time, and stop juggling eight launchers.</p>
       <div class="cta reveal">
         <a class="btn shimmer lg" data-download href="#download"><span data-icon="download"></span><span>Download for Windows</span></a>
         <a class="btn ghost lg" href="#tour"><span data-icon="play"></span><span>Take the tour</span></a>
@@ -508,7 +508,7 @@
         <p class="caption" id="caption"></p>
 
         <div class="numbers reveal">
-          <div><strong data-count="7">0</strong><span>launchers in one place</span></div>
+          <div><strong data-count="8">0</strong><span>launchers in one place</span></div>
           <div><strong data-count="3" data-suffix=" MB">0</strong><span>installer</span></div>
           <div><strong data-count="5" data-suffix=" ms">0</strong><span>per play time check</span></div>
           <div><strong data-count="0">0</strong><span>ads, accounts or subscriptions</span></div>
@@ -728,7 +728,7 @@
       // Launchers marquee (the list twice, so the loop is seamless).
       const launchers = [
         ["Steam", "#3987e5"], ["Epic Games", "#16a34a"], ["GOG", "#d55181"], ["Ubisoft Connect", "#199e70"],
-        ["EA app", "#d95926"], ["Battle.net", "#c98500"], ["Riot Games", "#e66767"], ["Your own games", "#9085e9"],
+        ["EA app", "#d95926"], ["Battle.net", "#c98500"], ["Riot Games", "#e66767"], ["HoYoPlay", "#1d9ab8"], ["Your own games", "#9085e9"],
       ];
       document.getElementById("track").innerHTML = [...launchers, ...launchers]
         .map(([name, c]) => `<span class="chip" style="--c:${c}"><i></i>${name}</span>`)
