@@ -3,6 +3,16 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
+    version: "0.6.0",
+    date: "2026-11-04",
+    title: "Welcome aboard",
+    changes: [
+      ["new", "A short introduction on first launch: what Lobby found, then your store accounts and the optional API keys, with what each one unlocks and where to find them later. See it again from Settings → General."],
+      ["fixed", "Play time: an open Battle.net (or Riot Client) no longer counts as playing one of its games. The wrong sessions this recorded are removed once, so the library no longer opens on a game you didn't play."],
+      ["fixed", "The close button of dialogs sits in their corner again."],
+    ],
+  },
+  {
     version: "0.5.0",
     date: "2026-11-04",
     title: "HoYoPlay games",
