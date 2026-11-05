@@ -3,6 +3,14 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
+    version: "0.6.3",
+    date: "2026-11-05",
+    title: "Steam stays signed in",
+    changes: [
+      ["fixed", "The Steam sign-in renews itself again: Lobby no longer asks you to sign in after a day while your Steam session is still valid."],
+    ],
+  },
+  {
     version: "0.6.2",
     date: "2026-11-04",
     title: "Polish",
