@@ -3,6 +3,17 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
+    version: "0.7.0",
+    date: "2026-11-06",
+    title: "Easier on the eyes and the keyboard",
+    changes: [
+      ["new", "The library works from the keyboard: Tab to a game, Enter to select it, Enter again to play. Every control shows a clear focus ring."],
+      ["improved", "Lobby follows Windows' \"reduce animations\" setting, and pauses its animations while it sits in the tray."],
+      ["improved", "Easier to read: section titles and secondary text have more contrast, and small buttons got a larger click area."],
+      ["improved", "Calmer look: softer glows, a still logo, and the free games' light only moves on the card you point at."],
+    ],
+  },
+  {
     version: "0.6.3",
     date: "2026-11-05",
     title: "Steam stays signed in",
