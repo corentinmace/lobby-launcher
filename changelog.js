@@ -3,6 +3,14 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
+    version: "0.9.1",
+    date: "2026-11-07",
+    title: "GBA saves carry over",
+    changes: [
+      ["fixed", "EmuDeck GBA games start in mGBA, the emulator of the Deck's Steam shortcuts, so both devices use the same save file instead of two that never meet."],
+    ],
+  },
+  {
     version: "0.9.0",
     date: "2026-11-07",
     title: "Saves that follow you",
