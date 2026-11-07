@@ -3,6 +3,15 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
+    version: "0.9.0",
+    date: "2026-11-07",
+    title: "Saves that follow you",
+    changes: [
+      ["new", "Play an emulated game on your PC, pick it up on your Steam Deck: with EmuDeck saves shared through Syncthing, Lobby waits for a save still coming from the other device before launching, instead of starting you on an older one."],
+      ["new", "When you quit an emulated game, its save is sent to your other devices right away, and Lobby tells you once it has arrived."],
+    ],
+  },
+  {
     version: "0.8.0",
     date: "2026-11-07",
     title: "EmuDeck games",
