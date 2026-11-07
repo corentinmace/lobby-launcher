@@ -3,6 +3,14 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
+    version: "0.9.2",
+    date: "2026-11-07",
+    title: "Lighter in the tray",
+    changes: [
+      ["fixed", "While Lobby sits in the tray, it no longer reads your controllers. A controller that stops responding can't keep Lobby open anymore, which could make an update fail to close it."],
+    ],
+  },
+  {
     version: "0.9.1",
     date: "2026-11-07",
     title: "GBA saves carry over",
