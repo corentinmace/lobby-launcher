@@ -3,6 +3,15 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
+    version: "0.8.0",
+    date: "2026-11-07",
+    title: "EmuDeck games",
+    changes: [
+      ["new", "EmuDeck support: your ROMs show up in the library with clean names, covers and game length, and start in the emulator EmuDeck uses for their console, just like on a Steam Deck."],
+      ["new", "Play time for emulated games, counted for the game you launched from Lobby."],
+    ],
+  },
+  {
     version: "0.7.0",
     date: "2026-11-06",
     title: "Easier on the eyes and the keyboard",
