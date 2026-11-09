@@ -3,6 +3,14 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
+    version: "0.9.4",
+    date: "2026-11-09",
+    title: "Smoother updates",
+    changes: [
+      ["fixed", "Updates no longer stop with \"Failed to kill Lobby\": Lobby lets go of your controllers before the installer starts, so nothing keeps it from closing."],
+    ],
+  },
+  {
     version: "0.9.3",
     date: "2026-11-09",
     title: "Your controller, your game",
