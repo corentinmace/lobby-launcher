@@ -3,6 +3,14 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
+    version: "0.9.3",
+    date: "2026-11-09",
+    title: "Your controller, your game",
+    changes: [
+      ["fixed", "Lobby lets go of your controller as soon as you switch to a game, instead of keeping it until you quit Lobby. Games and Steam Input see it right away again."],
+    ],
+  },
+  {
     version: "0.9.2",
     date: "2026-11-07",
     title: "Lighter in the tray",
