@@ -3,6 +3,14 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
+    version: "0.10.1",
+    date: "2026-11-12",
+    title: "Updates that go through",
+    changes: [
+      ["fixed", "Updates no longer stop with \"Failed to kill Lobby\": the installer now waits for Lobby to finish closing instead of giving up."],
+    ],
+  },
+  {
     version: "0.10.0",
     date: "2026-11-12",
     title: "Your buttons, your way",
