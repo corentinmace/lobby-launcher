@@ -3,6 +3,15 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
+    version: "0.10.0",
+    date: "2026-11-12",
+    title: "Your buttons, your way",
+    changes: [
+      ["new", "TV mode shows the buttons of the controller in your hands: A and B on Xbox, cross and circle on PlayStation, A and B on Switch. Pick up another controller and the hints follow."],
+      ["improved", "On a Switch controller, A confirms and B goes back, like on the console."],
+    ],
+  },
+  {
     version: "0.9.4",
     date: "2026-11-09",
     title: "Smoother updates",
