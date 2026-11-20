@@ -3,6 +3,18 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
+    version: "0.11.0",
+    date: "2026-11-20",
+    title: "Tagged for you",
+    changes: [
+      ["new", "Your games are tagged by themselves, with the tags Steam players voted for most: Roguelike, Metroidvania, Co-op… Games from other stores get them too, through their Steam page. No key to set up."],
+      ["new", "A Tags section in the sidebar lists the most common ones in your library: click one to see only those games."],
+      ["new", "Sort by tag splits your library into shelves, one per tag, biggest first."],
+      ["new", "A game's tags show under its logo; click one to see every game that has it."],
+      ["improved", "Right-click a tag you don't care about (Indie, Singleplayer…) to hide it everywhere. Hidden tags stay at the bottom of the list, one click brings them back."],
+    ],
+  },
+  {
     version: "0.10.1",
     date: "2026-11-12",
     title: "Updates that go through",
