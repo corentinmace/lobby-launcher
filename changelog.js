@@ -3,6 +3,14 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
+    version: "0.12.1",
+    date: "2026-11-22",
+    title: "Right where you left off",
+    changes: [
+      ["improved", "Lobby opens on the view you were last on (a collection, a platform, a tag…) with the same sort, instead of going back to the whole library sorted by name."],
+    ],
+  },
+  {
     version: "0.12.0",
     date: "2026-11-22",
     title: "Your Minecraft instances",
