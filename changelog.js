@@ -3,7 +3,7 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
-    version: "0.12.1",
+    version: "0.12.2",
     date: "2026-11-22",
     title: "Right where you left off",
     changes: [
