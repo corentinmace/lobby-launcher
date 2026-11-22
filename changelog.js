@@ -3,6 +3,16 @@
 // Kinds: "new", "improved", "fixed".
 window.CHANGELOG = [
   {
+    version: "0.12.0",
+    date: "2026-11-22",
+    title: "Your Minecraft instances",
+    changes: [
+      ["new", "Minecraft instances show up in your library, one card per instance, from Prism Launcher, CurseForge, Modrinth, FTB App, ATLauncher and PolyMC. Play starts the instance straight away, without going through the launcher's home screen."],
+      ["new", "Each instance shows its launcher, Minecraft version and mod loader (\"Prism Launcher · 1.21.1 · Fabric\"), its pack icon, and the play time and last session its launcher recorded."],
+      ["new", "A Minecraft platform in the sidebar gathers them. Instances with the same name stay separate: they are often different versions of a pack."],
+    ],
+  },
+  {
     version: "0.11.0",
     date: "2026-11-20",
     title: "Tagged for you",
